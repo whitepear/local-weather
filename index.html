@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Local Weather Viewer</title>
+	<meta name="description" content="Local Weather Viewer">
+
+	<!-- Normalize CSS -->
+ 	<link rel="stylesheet" type="text/css" href="normalize.css">
+
+	<!-- Ensures proper rendering and touch zooming -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+  <!-- Montserrat Font -->
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> 	
+	
+	<!-- Custom CSS -->
+	<link href="styles.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+	<div class="welcome mont">
+		<p>Please allow the request to find your location in order to access weather information.</p>
+	</div>
+	<div class="container mont">
+		<h1 class="temperature"></h1>
+		<h3 class="description"></h3>
+		<p class="location"></p>
+		<div class="btnWrap">
+			<button id="tempSwitch" class="shrink activeShrink">&deg;F</button>
+		</div>
+	</div>	
+	
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	
+	<!-- Custom JS -->
+	<script src="script.js"></script>
+</body>
+</html>
