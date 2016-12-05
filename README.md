@@ -4,4 +4,4 @@ This application provides users with information about the weather in their loca
 
 The reported temperature can be converted between Celsius and Fahrenheit at the touch of a button. The application's presentation changes depending on the weather data provided to the user. The application is responsively-designed and consumes JSON data from the OpenWeather API.
 
-Note: An API key is required in order to receive weather data from the OpenWeather API. This key has been removed from the code within this repository. 
+Note: An API key is required in order to receive weather data from the OpenWeather API. The key found within this repository is no longer valid.
