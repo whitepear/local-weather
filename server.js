@@ -17,7 +17,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', function(req, res, next) {
-  res.sendFile(path.join(__dirname, 'public'));
+  res.sendFile(path.join(__dirname, 'public/index.html'));
 });
 
 app.get('/getWeather/', function(req, res, next) {
@@ -52,8 +52,6 @@ app.use(function(err, req, res, next) {
   res.send('An error occurred: ' + err.message);
 });
 
-app.listen(3000, function() {
-  console.log('Server is running...');
-});
+app.listen(process.env.PORT || 3000, console.log('Server is running...'));
 
 module.exports = app;
