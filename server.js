@@ -21,7 +21,7 @@ app.get('/', function(req, res, next) {
 });
 
 app.get('/getWeather/', function(req, res, next) {
-  request("http://api.openweathermap.org/data/2.5/weather?lat="+req.query.lat+"&lon="+req.query.lon+"&APPID=REDACTED",
+  request("http://api.openweathermap.org/data/2.5/weather?lat="+req.query.lat+"&lon="+req.query.lon+"&APPID=2a1dfced24bf88fa9d326596f4c84973",
           function(err, apiRes, apiBody) {
             res.send(apiRes);
           });
